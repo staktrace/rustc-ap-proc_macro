@@ -1,13 +1,15 @@
 [package]
 authors = ["The Rust Project Developers"]
-name = "proc_macro"
-version = "0.0.0"
+name = "rustc-ap-proc_macro"
+version = "40.0.0"
+description = "Manually published version of the package proc_macro in the rust-lang/rust repository from commit 3ec5a99aaa0084d97a9e845b34fdf03d1462c475"
+repository = "https://github.com/staktrace/rustc-ap-proc_macro"
+license = "MIT / Apache 2.0"
 
 [lib]
 path = "lib.rs"
-crate-type = ["dylib"]
 
 [dependencies]
-syntax = { path = "../libsyntax" }
-syntax_pos = { path = "../libsyntax_pos" }
-rustc_errors = { path = "../librustc_errors" }
+rustc-ap-syntax = "40.0.0"
+rustc-ap-syntax_pos = "40.0.0"
+rustc-ap-rustc_errors = "40.0.0"
